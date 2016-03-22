@@ -27,15 +27,15 @@ Mergesort_a <- function(l) {
 Csplitinv_Merge_a <- function(a,b) {
   ar<-length(a)
   br<-length(b)
-  r<-numeric(ar+br)
+  #r<-numeric(ar+br)
   ai<-1; bi<-1; j<-1;
   counter<-0
   for(j in 1:length(r)) {
     if((ai<=length(a) && a[ai]<b[bi]) || (bi>length(b))) {
-      r[j]<-a[ai]
+    #  r[j]<-a[ai]
       ai<-ai+1
     } else {
-      r[j]<-b[bi]
+    #  r[j]<-b[bi]
       bi<-bi+1
       counter<-counter+ar-ai+1
     }
